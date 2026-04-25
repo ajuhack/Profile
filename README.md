@@ -1,144 +1,205 @@
-# AJAY KANT - Professional Portfolio
+# AJAY KANT - Professional Portfolio & Weather Dashboard
 
-## 🎯 Portfolio Overview
+## 🌐 Live Website
+**https://aceakant.github.io/profile**
 
-This is a comprehensive professional portfolio website for **AJAY KANT**, showcasing 14+ years of experience in:
-- **Risk Analytics & Credit Risk Modelling**
-- **Fraud Detection & AI/ML**
-- **Digital Transformation & Leadership**
-- **Regulatory Compliance (Basel III/IV, BCBS 239, GDPR, DORA)**
+## 📋 Overview
 
-## 📊 Content Included
+This is a comprehensive professional portfolio website combined with an interactive weather dashboard featuring:
+- **Professional Portfolio** showcasing 14+ years of experience in Risk Analytics
+- **Interactive Weather Dashboard** with real-time data from OpenWeatherMap API
+- **Responsive Design** that works on all devices
+- **Modern UI/UX** with smooth animations and gradient design
 
-### Flagship Projects (5)
+## 📁 File Structure
+
+```
+profile/
+├── index.html           # Main HTML file
+├── styles.css           # All CSS styles
+├── script.js            # Portfolio JavaScript
+├── weather.js           # Weather Dashboard JavaScript
+└── README.md            # This file
+```
+
+## ✨ Features
+
+### Portfolio Section
+✅ Professional introduction with key metrics
+✅ 5 Flagship projects with detailed information
+✅ About section with highlights
+✅ Contact information and links
+✅ Smooth navigation
+
+### Weather Dashboard
+✅ Search any city worldwide
+✅ Real-time weather conditions
+✅ Current weather metrics (humidity, wind, pressure, visibility, etc.)
+✅ 5-day weather forecast
+✅ 24-hour hourly forecast
+✅ Sunrise/Sunset times
+✅ Moon phase calculation
+✅ UV Index assessment
+✅ Beautiful weather icons
+✅ Responsive design
+
+## 🚀 Getting Started
+
+### Prerequisites
+1. A GitHub account
+2. Free OpenWeatherMap API key
+
+### Setup Instructions
+
+#### 1. Get OpenWeatherMap API Key
+- Visit: https://openweathermap.org/api
+- Click "Sign Up"
+- Create free account
+- Go to "API keys" tab
+- Copy your API key
+
+#### 2. Update API Key
+Open `weather.js` and replace line 2:
+```javascript
+const API_KEY = 'your_api_key_here';
+```
+
+#### 3. Enable GitHub Pages
+1. Go to repository settings: https://github.com/aceakant/profile/settings
+2. Click "Pages" in left sidebar
+3. Under "Build and deployment":
+   - Source: Select "Deploy from a branch"
+   - Branch: Select "main"
+   - Folder: "/" (root)
+4. Click Save
+5. Wait 2-3 minutes for deployment
+
+#### 4. Access Your Website
+Your portfolio will be live at:
+**https://aceakant.github.io/profile**
+
+## 🎨 Design Features
+
+- **Purple Gradient Theme** - Modern and professional
+- **Glassmorphic Cards** - Modern UI trend
+- **Smooth Animations** - Enhanced user experience
+- **Fully Responsive** - Mobile, tablet, desktop
+- **SEO Optimized** - Proper meta tags and structure
+- **Fast Loading** - No heavy dependencies
+
+## 📊 Portfolio Content
+
+### Professional Summary
+- **Name**: AJAY KANT
+- **Title**: Head of Risk Analytics
+- **Experience**: 14+ years
+- **Organizations**: 5 (NBFC, Banking, Fintech, Consulting, US Banking)
+- **Key Metric**: $10M+ value delivered
+
+### Projects Included
 1. **L&T Finance** - Head of Risk Analytics (Current)
 2. **Axis Bank** - Universal Underwriting Programme
 3. **Dhani Loans** - Risk & Policy Build-out
 4. **JPMorgan Chase** - Fraud Risk Strategy
 5. **Westpac** - Fraud Framework & Campaign Management
 
-### Key Metrics
-- **14+ years** of global experience
-- **$10M+** in cumulative cost efficiencies delivered
-- **15+ team members** led across multiple organizations
-- **5 global organizations** (NBFC, Banking, Fintech, Consulting, US Banking)
+### Skills
+- Risk & Credit Modelling
+- Leadership & Strategy
+- Data, AI & Cloud
+- Regulatory & Compliance
+- Domain Expertise
+- Delivery & Agile
 
-### Core Competencies
-- **Risk & Credit**: Credit Risk Modelling, Scorecard Models, IFRS 9, Portfolio Management
-- **Leadership & Strategy**: P&L, C-Suite Engagement, Regulatory Liaison, Team Leadership
-- **Data, AI & Cloud**: Python, SAS, GCP, Azure, AWS, Tableau, Power BI, ML/AI
-- **Regulatory**: Basel III/IV, BCBS 239, GDPR, DORA, EBA Guidelines, PSD2
-- **Domain**: Retail Lending, Cards, Banking, Fintech, KYC, Alternate Data
-- **Delivery**: Agile, Jira, Confluence, Model Risk Management, QBRs
+## 🌤️ Weather Dashboard Usage
 
-## 🌐 Live Website
+### How to Use
+1. Enter any city name in the search box
+2. Press Enter or click Search button
+3. View real-time weather data
+4. Scroll for 5-day forecast and hourly predictions
 
-**https://ajuhack.github.io/Profile**
+### Weather Icons
+- ☀️ Clear/Sunny
+- ⛅ Partly Cloudy
+- ☁️ Cloudy
+- 🌧️ Rainy
+- ⛈️ Thunderstorm
+- ❄️ Snowy
+- 🌫️ Foggy
 
-## 📁 File Structure
+### Data Displayed
+- Current temperature and conditions
+- Feels-like temperature
+- Humidity, wind speed, pressure
+- Visibility and cloud coverage
+- UV Index and assessment
+- Sunrise/sunset times
+- Moon phase
+- 5-day forecast
+- Hourly forecast (24 hours)
 
+## 🔧 Customization
+
+### Change Theme Color
+In `styles.css`, find and replace:
+```css
+#667eea /* Primary color */
+#764ba2 /* Secondary color */
 ```
-Profile/
-├── index.html              # Main portfolio page
-├── styles.css              # Responsive design & animations
-├── script.js               # All resume data & dynamic loading
-├── README.md               # This file
-└── projects/
-    ├── project_1/          # L&T Finance
-    ├── project_2/          # Axis Bank
-    ├── project_3/          # Dhani Loans
-    ├── project_4/          # JPMorgan Chase
-    └── project_5/          # Westpac
-```
 
-## 🎨 Design Features
+### Update Portfolio Content
+Edit the `projectsData` array in `script.js` to add/modify projects
 
-✅ **Modern & Responsive** - Works on desktop, tablet, mobile
-✅ **Purple Gradient Theme** - Professional and eye-catching
-✅ **Smooth Animations** - Fade-in effects and hover transitions
-✅ **SEO Optimized** - Proper meta tags and semantic HTML
-✅ **Fast Loading** - No external dependencies (pure HTML/CSS/JS)
-✅ **Accessibility** - WCAG compliant structure
+### Add More Sections
+Add new `<section>` tags in `index.html` and style in `css`
 
-## 🚀 How to Use
+## 📱 Responsive Breakpoints
+- Desktop: 1200px+
+- Tablet: 768px - 1199px
+- Mobile: Below 768px
 
-### View Online
-Simply open: https://ajuhack.github.io/Profile
+## 🌐 Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-### Customize Content
-1. Edit `script.js` to update:
-   - Projects data
-   - Skills categories
-   - Experience entries
-   - Contact information
-
-2. Edit `styles.css` to customize:
-   - Colors (change #667eea and #764ba2 for different gradient)
-   - Fonts and sizes
-   - Spacing and layout
-
-3. Edit `index.html` to modify:
-   - Navigation links
-   - Section order
-   - Additional sections
-
-### Update Projects
-Each project folder can contain:
-- `README.md` - Project details
-- `index.html` - Project-specific landing page
-- `images/` - Project screenshots/demos
-
-## 📱 Contact Information
-
+## 📞 Contact
 - **Email**: aceakant@gmail.com
 - **Phone**: +91 97699 84956
 - **LinkedIn**: linkedin.com/in/ajuhack
 - **Location**: Open to relocation — Ireland / Netherlands / EU
 
-## 🔄 Deployment
-
-### GitHub Pages (Already Enabled)
-The portfolio is automatically deployed to:
-```
-https://ajuhack.github.io/Profile
-```
-
-Any changes pushed to the `main` branch will automatically update the live website within 2-3 minutes.
-
-### Other Deployment Options
-- **Netlify**: Connect GitHub repo, auto-deploy on push
-- **Vercel**: Similar to Netlify, zero-config
-- **Custom Domain**: Add CNAME file for custom domain
-
 ## 📈 Next Steps
 
-1. **Share**: Send portfolio URL to recruiters, connections, hiring managers
-2. **LinkedIn**: Add portfolio URL to your LinkedIn profile
-3. **Job Applications**: Include in cover letters and applications
-4. **Update**: Add new projects and achievements as you progress
-5. **Analyze**: Use GitHub Analytics to track visitors
+1. ✅ Get OpenWeatherMap API key
+2. ✅ Update API key in weather.js
+3. ✅ Enable GitHub Pages
+4. ✅ Share portfolio URL
+5. ✅ Add to LinkedIn profile
+6. ✅ Use in job applications
 
-## 💡 Tips for Better Results
+## 🎯 Features to Add (Future)
+- [ ] Blog section
+- [ ] Project gallery with images
+- [ ] Testimonials section
+- [ ] Dark mode toggle
+- [ ] Multiple language support
+- [ ] Weather comparison tool
+- [ ] Historical weather data
 
-✅ Keep portfolio updated with latest achievements
-✅ Add metrics and quantifiable results to projects
-✅ Include technology stack for each project
-✅ Share portfolio link on social media
-✅ Update LinkedIn with portfolio URL
-✅ Monitor visitor analytics via GitHub
-
-## 📞 Support
-
-To make changes:
-1. Edit files locally or via GitHub web editor
-2. Commit changes to main branch
-3. Portfolio updates automatically
-
-## License
+## 📄 License
 
 Copyright © 2026 AJAY KANT. All rights reserved.
+
+## 🙏 Credits
+
+- Weather data: [OpenWeatherMap](https://openweathermap.org/)
+- Icons: [Font Awesome](https://fontawesome.com/)
+- Platform: [GitHub Pages](https://pages.github.com/)
 
 ---
 
 **Last Updated**: 2026-04-25
-**Version**: 1.0
+**Version**: 2.0

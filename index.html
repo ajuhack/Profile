@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Showcase Your Projects</title>
+    <meta name="description" content="AJAY KANT - Head of Risk Analytics | Professional Portfolio & Weather Dashboard">
+    <title>AJAY KANT - Portfolio & Weather Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>Portfolio</h1>
+                <h1>AJAY KANT</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#weather">Weather</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -25,46 +27,89 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Showcasing my best projects and work</p>
-            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <h1>AJAY KANT</h1>
+            <p class="hero-subtitle">Head of Risk Analytics | Credit Risk & Fraud Leadership | AI/ML & Digital Transformation</p>
+            <p>14+ years of global experience across retail banking, fintech, and management consulting</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">14+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$10M+</div>
+                    <div class="stat-label">Value Delivered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Team Members Led</div>
+                </div>
+            </div>
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be loaded here -->
+            <h2>Flagship Projects</h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- Weather Dashboard Section -->
+    <section id="weather" class="weather-section">
+        <div class="container">
+            <h2>Weather Dashboard</h2>
+            <div class="weather-container">
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for a city..." />
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Loading Spinner -->
+                <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+                <!-- Current Weather -->
+                <div id="currentWeather" class="current-weather"></div>
+
+                <!-- 5-Day Forecast -->
+                <div id="forecastSection" class="forecast-section" style="display: none;">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-grid" id="forecastGrid"></div>
+                </div>
+
+                <!-- Hourly Forecast -->
+                <div id="hourlySection" class="hourly-section" style="display: none;">
+                    <h3>24-Hour Forecast</h3>
+                    <div class="hourly-scroll" id="hourlyScroll"></div>
+                </div>
+
+                <!-- Additional Info -->
+                <div id="additionalInfo" class="additional-info" style="display: none;"></div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate developer focused on creating amazing digital experiences. With expertise in web development, I bring ideas to life through clean code and innovative solutions.</p>
-        </div>
-    </section>
+    <section id="about" class="about"></section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Have a project in mind? Let's work together!</p>
-            <a href="mailto:your@email.com" class="btn btn-secondary">Send an Email</a>
-        </div>
-    </section>
+    <section id="contact" class="contact"></section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+            <p>&copy; 2026 AJAY KANT. All rights reserved. | Open to relocation — Ireland / Netherlands / EU</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
